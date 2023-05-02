@@ -24,8 +24,8 @@ Feature: Test watchlist and search pages
     Then Use the "Search IMDb" section from header and search for "Omul de fier"
     Then Select "Omul de fier" title
     Then After the title page is loaded, add the title to Watchlist
-    Then Use the "Search IMDb" section from header and search for "Maleficent"
-    Then Select "Maleficent" title
+    Then Use the "Search IMDb" section from header and search for "Guardians of the Galaxy Volume 3"
+    Then Select "Guardians of the Galaxy Volume 3" title
     Then After the title page is loaded, add the title to Watchlist
 
   Scenario: Edit Watchlist and delete two titles
