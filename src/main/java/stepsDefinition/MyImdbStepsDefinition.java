@@ -5,7 +5,7 @@ import io.cucumber.java.en.Then;
 import org.openqa.selenium.By;
 import static java.lang.Thread.sleep;
 
-public class myImdbStepsDefinition {
+public class MyImdbStepsDefinition {
     //Open Imbd website
     @Given("Access {string} website")
     public void openImdbWebsite(String pageName) throws InterruptedException {
