@@ -55,6 +55,17 @@ public class MyImdbStepsDefinition {
     public void clickOnSignInButton() throws InterruptedException {
         StartDriver.getDriver().findElement(By.id("signInSubmit")).click();
         sleep(5000);
+        if (StartDriver.getDriver().findElement(By.id("auth-captcha-image-container")).isDisplayed()){
+            enterPassword("Btqb9evBc-8m-HK");
+            sleep(2000);
+            StartDriver.getDriver().findElement(By.id("auth-captcha-guess")).click();
+            System.out.println("Please resolve Captcha");
+            sleep(15000);
+            StartDriver.getDriver().findElement(By.id("signInSubmit")).click();
+        }
+        else {
+            System.out.println("No captcha detected");
+        }
     }
 
     //Wathlist feature
