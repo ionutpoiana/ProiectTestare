@@ -30,7 +30,7 @@ Feature: Test watchlist and search pages
 
   Scenario: Edit Watchlist and delete two titles
     Then Enter Edit mode
-    Then Select 1, 2, 5 titles to delete
+    Then Select numbers 1, 2, 5 titles to delete
     Then Delete items
     Then Click the "Done" button
 
