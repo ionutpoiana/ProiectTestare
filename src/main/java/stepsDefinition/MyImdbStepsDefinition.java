@@ -112,7 +112,7 @@ public class MyImdbStepsDefinition {
     }
 
     // Select first two titles to delete
-    @Then("Select numbers {int}, {int}, {int} titles to delete")
+    @Then("Select titles numbers {int}, {int}, {int} to delete")
     public void selectTitlesToDelete(Integer nr, Integer nrdoi, Integer nrtrei) throws InterruptedException {
         StartDriver.getDriver().findElement(By.xpath("(//div[@name='titleCheck'])["+nr+"]")).click();
         sleep(3000);
